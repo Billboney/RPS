@@ -4,4 +4,17 @@ function getcomputerchoice(){
     return randomElement
 }
 
+
+function playerselection(){
+    const x = prompt('rps')
+    return x
+}
+
+function play(getcomputerchoice, playerselection){
+    if (prompt() == "scissors"){
+        console.log('wow')
+    }
+}
+
 console.log(getcomputerchoice())
+play()
