@@ -5,29 +5,27 @@ function getcomputerchoice() {
 }
 
 
-
-
-
+function player(choice){
+    console.log(choice)
+    return choice;
+}
 
 
 function play(){
-    i = 0
-    k = 0
+    //temp point change
+    i = 4
+    k = 4
     while (i < 5 && k < 5){
         console.log('you: '+ i)
         console.log('computer: ' + k)
         let p = window.prompt()
         let playerselection = p.toLowerCase()
         let j = getcomputerchoice()
-        if (playerselection == "scissors" && j == "paper"){
-            console.log('win')
-            i ++
-        }
-        else if (playerselection == "rock" && j == "paper"){
-            console.log('win')
-            i ++
-        }
-        else if (playerselection == "paper" && j == "rock"){
+        if (
+            (playerselection == "scissors" && j == "paper") ||
+            (playerselection == "rock" && j == "paper") ||
+            (playerselection == "paper" && j == "rock")
+        ){
             console.log('win')
             i ++
         }
