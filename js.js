@@ -1,25 +1,18 @@
 function getcomputerchoice() {
-    var y = ['rock', 'paper', 'sissors']
+    var y = ['rock', 'paper', 'scissors']
     var getcomputerchoic = y[Math.floor(Math.random() * y.length)];
     return getcomputerchoic ;
 }
 
 
-function player(choice){
-    console.log(choice)
-    return choice;
-}
+i= 0
+k= 0
 
 
-function play(){
-    //temp point change
-    i = 4
-    k = 4
-    while (i < 5 && k < 5){
-        console.log('you: '+ i)
+function play(choice){
+    console.log('you: '+ i)
         console.log('computer: ' + k)
-        let p = window.prompt()
-        let playerselection = p.toLowerCase()
+        let playerselection = choice
         let j = getcomputerchoice()
         if (
             (playerselection == "scissors" && j == "paper") ||
@@ -42,8 +35,6 @@ function play(){
         }
         else {
         }
-        
-    }
 }
 
 
